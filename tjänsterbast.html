@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tjörns Customs - Bästsäljare</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        /* Navigation */
+    .navbar {
+      background-color: rgb(0, 0, 0);
+      padding: 15px 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .center {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #ffffff;
+      margin: 0 10px;
+      font-weight: 500;
+    }
+
+    .logo img {
+      height: 60px;
+      width: auto;
+      background-color: black;
+      
+    }
+    .navbar button{
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+        padding: 20px;
+        
+    }
+        /* Hero Section */
+        
+        .hero {
+      display: flex;
+      height: 300px;
+      background-image: url('bilder/moppe4.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3); /* Brightness filter */
+      z-index: 1;
+    }
+    .hero h1 {
+      font-size: 36px;
+      margin: 0;
+      color: rgb(255, 255, 255);
+      position: relative;
+      z-index: 2; /* Ensure text is above the filter */
+    }
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+        
+    
+        /* Info bar */
+    .info-bar {
+      background-color: #111;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .product-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .product-card h3 {
+            margin: 0.5rem 0;
+        }
+        .product-card p {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+  <div class="navbar">
+    <div class="logo"><img src="logo white.png" alt=""></div>
+    <div class="center">
+      <a href="index.html"><button>Hem</button></a>
+      <a href="tjänster.html"><button>Tjänster</button></a>
+      <a href="Prislista.html"><button>Priser</button></a>
+    </div>
+    <div>
+      <a href="#">🔍</a>
+      <a href="#">🛒</a>
+    </div>
+  </div>
+  <div class="hero">
+    <header>
+        <h1>BÄSTSÄLJARE</h1>
+        <p></p>
+    </header>
+    </div>
+    <!-- Info Bar -->
+  <div class="info-bar">
+    <div>SUVERÄN KUNDTJÄNST</div>
+    <div>SÄKER BETALNING</div>
+    <div>SNABB BYGGTID</div>
+  </div>
+    <div class="container">
+        <section class="product-grid">
+            <div class="product-card">
+                <img src="icons/gearbox-engine-icon.png" alt="motorbygge">
+                <h3>MOTORBYGGE</h3>
+                <p>500kr-1500kr</p>
+            </div>
+            <div class="product-card">
+                <img src="icons/engine-oil-icon.png" alt="service">
+                <h3>SERVICE</h3>
+                <p>500kr</p>
+            </div>
+            <div class="product-card">
+                <img src="icons/services-plumber-icon.webp" alt="Product 3">
+                <h3>Styling</h3>
+                <p>Kontakta för pris</p>
+            </div>
+            <div class="product-card">
+                <img src="icons/settings-icon.webp" alt="Product 4">
+                <h3>Komplett bygge</h3>
+                <p>Kontakta för pris</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Tjörns Customs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
